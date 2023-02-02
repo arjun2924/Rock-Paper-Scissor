@@ -5,7 +5,7 @@ startGame = input("Type y to play or n to exit: ")
 
 if startGame == 'n':
     print("Untill next time goodbye!")
-else:
+if startGame == 'y':
     compArr = ['r', 'p', 's']
     userInp = input("Enter rock(r), paper(p) or scissors(s): ")
     compChoice = compArr[random.randint(0, 2)]
@@ -31,3 +31,5 @@ else:
                 print("Draw")
             else:
                 print("You win!")
+else:
+    print("Enter valid input")
